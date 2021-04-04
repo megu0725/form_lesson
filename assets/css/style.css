@@ -1,1 +1,344 @@
 @charset "utf-8";
+
+.wrapper {
+  background-color: #f2f6f7;
+  padding: 32px 0;
+  width: 100%;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.herf-width {
+  width: 50%;
+}
+
+.sub-guidetext {
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.guide-text {
+  font-size: 12px;
+  color: #949697;
+  text-align: center;
+}
+
+.important {
+  color: #dd4b39;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  transition: 0.3s;
+  padding: 13px;
+  font-size: 13px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+/* メインコンテンツ */
+.main-content {
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
+}
+
+/* タイトル */
+.form-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #545658;
+  font-size: 24px;
+}
+/* 別のアカウントリンク */
+.SNS-account {
+  margin-bottom: 8px;
+}
+
+.SNS-link {
+  display: inline-block;
+  text-align: center;
+}
+
+.SNS-link:last-child {
+  margin-left: 8px;
+}
+
+.facebook-link {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+.facebook-link:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
+.google-link {
+  color: #dd4b39;
+  background-color: #fff;
+}
+
+.google-link:hover {
+  background-color: #f7f7f7;
+}
+
+.input-area-title {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-area-title::before {
+  content: "";
+  height: 1px;
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: #ececec;
+}
+
+.input-area-title p {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* フォームエリア */
+.textlabel {
+  color: #545658;
+  margin-bottom: 5px;
+  font-size: 12px;
+  display: block;
+}
+
+.input-area:focus{
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+  outline: none;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.input-area {
+  box-sizing: border-box;
+  height: 36px;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.input-inner {
+  background-color: transparent;
+}
+
+/* 名前 */
+.name-text:last-child {
+  margin-left: 8px;
+}
+/* 性別 */
+.gender-contents {
+  color: #545658;
+  font-size: 16px;
+}
+
+.gender-check {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gender-check:first-child {
+  margin-left: 0;
+}
+
+.gender-check input {
+  display: none;
+}
+
+.gender-check span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-check span::before {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+}
+
+.gender-check span::after {
+  background-color: #00cccc;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 8px;
+  transform: translateY(-50%);
+}
+
+.gender-check input:checked + span::after {
+  opacity: 1;
+}
+
+/* 出身 */
+.select-area {
+  position: relative;
+}
+
+.birthplace-box select {
+  appearance: none;
+}
+
+.birthplace-box select:focus {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+.select-area::after {
+  content: "";
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  height: 5px;
+  width: 5px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 45%;
+  right: 10px;
+}
+
+
+
+/* 希望コース */
+.hopecouse {
+  color: #545658;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hopecouse input {
+  display: none;
+}
+
+.couse-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.couse-text::before {
+  content: "";
+  border: 1px solid #d9d9d9;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -8px;
+}
+
+.hopecouse input:checked + .couse-text::after {
+  content: "";
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin-top: -13px;
+}
+
+/* 備考 */
+.remarks-box textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* アカウント作成ボタン */
+.account-making {
+  margin-bottom: 20px;
+}
+
+.account-making input{
+  background-color: #01bfbd;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.account-making input:hover {
+  background-color: #01a6a4;
+}
+
+.account-making input:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+}
+
+.sub-guidetext a {
+  color: #01a6a4;
+}
+
+.sub-guidetext a:hover {
+  color: #01bfbd;
+}
+
+.footer-contents {
+  text-align: center;
+}
+
+.footer-contents a {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.footer-contents a:first-child{
+  margin-top: 0;
+}
+
+.footer-contents a:hover {
+  border-bottom: 1px #01bfbd solid;
+}

@@ -14,100 +14,100 @@
       <div class="inner">
         <div class="main-content">
           <h1 class="form-title">アカウント作成</h1>
-          <div class="SNS-account">
-            <div class="">
-              <a href="">Facebookでスタート</a>
+          <div class="SNS-account d-flex">
+            <div class="SNS-link herf-width">
+              <a href="" class="facebook-link button full-width">Facebookでスタート</a>
             </div>
-            <div>
-              <a href="">Googleでスタート</a>
+            <div class="SNS-link herf-width">
+              <a href="" class="google-link button full-width">Googleでスタート</a>
             </div>
-            <p>タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </div>
+          <p class="guide-text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           <div class="input-area-title">
-            <p>アカウント情報</p>
+            <p class="guide-text">アカウント情報</p>
           </div>
           <form action="#">
-            <div class="name-box">
-              <div class="name-text">
-                <p>名字<span class="important">※</span></p>
-                <input type="text" name="last-name">
+            <div class="name-box d-flex row">
+              <div class="name-text herf-width">
+                <p class="textlabel">名字<span class="important"> ※</span></p>
+                <input class="input-area" type="text" name="last-name" required>
               </div>
-              <div class="name-text">
-                <p>名前<span class="important">※</span></p>
-                <input type="text" name="first-name">
-              </div>
-            </div>
-            <div class="gender-box">
-              <p>性別</p>
-              <div class="gender-contents">
-                <div class="gender-check">
-                  <input type="radio" name="men">
-                  <label for="men">男性</label>
-                </div>
-                <div class="gender-check">
-                  <input type="radio" name="women">
-                  <label for="woman">女性</label>
-                </div>
-                <div class="gender-check">
-                  <input type="radio" name="other">
-                  <label for="other">その他</label>
-                </div>
+              <div class="name-text herf-width">
+                <p class="textlabel">名前<span class="important"> ※</span></p>
+                <input class="input-area" type="text" name="first-name" required>
               </div>
             </div>
-            <div class="birthplace-box">
-              <p>出身</p>
-              <select name="birthplace" id="">
-                <option value="tokyo">東京</option>
-                <option value="thiba">千葉</option>
-                <option value="saitama">埼玉</option>
-                <option value="kanagawa">神奈川</option>
-              </select>
-            </div>
-            <div class="e-mail-box">
-              <p>Eメール<span>※</span></p>
-              <input type="email" name="mail" placeholder="ex)hoge@example.com">
-            </div>
-            <div class="tel-box">
-              <p>電話番号</p>
-              <input type="tel" name="tel" placeholder="ex)09012345678">
-            </div>
-            <div class="password-box">
-              <div class="password-set">
-                <p>パスワード<span>※</span></p>
-                <input type="password" name="password">
-              </div>
-              <div class="password-re">
-                <p>パスワード(確認用)<span>※</span></p>
-                <input type="password" name="password-re">
+            <div class="gender-box row">
+              <p class="textlabel">性別</p>
+              <div class="gender-contents d-flex">
+                <label class="gender-check">
+                  <input type="radio" name="gender" value="men">
+                  <span>男性</span>
+                </label>
+                <label class="gender-check">
+                  <input type="radio" name="gender" value="women">
+                  <span>女性</span>
+                <label class="gender-check">
+                  <input type="radio" name="gender" value="other">
+                  <span>その他</span>
+                </label>
               </div>
             </div>
-            <div class="hopecouse-box">
-              <p>希望コース</p>
+            <div class="birthplace-box  herf-width row">
+              <p class="textlabel">出身</p>
+              <div class="select-area">
+                <select class="input-area" name="birthplace" id="">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="e-mail-box row">
+              <p class="textlabel">Eメール<span class="important"> ※</span></p>
+              <input class="input-area" type="email" name="mail" placeholder="ex)hoge@example.com" required>
+            </div>
+            <div class="tel-box row">
+              <p class="textlabel">電話番号</p>
+              <input class="input-area" type="tel" name="tel" placeholder="ex)09012345678">
+            </div>
+             <div class="password-set row">
+              <p class="textlabel">パスワード<span class="important"> ※</span></p>
+              <input class="input-area" type="password" name="password" required>
+            </div>
+            <div class="password-re row">
+              <p class="textlabel">パスワード(確認用)<span class="important"> ※</span></p>
+              <input class="input-area" type="password" name="password-re" required>
+            </div>
+            <div class="hopecouse-box row">
+              <p class="textlabel">希望コース</p>
               <div class="hopecouse-contets">
-                <div class="hopecouse-check">
-                  <input type="checkbox" name="frontßend">
-                  <label for="frontend">フロントエンド</label>
+                <div class="hopecouse">
+                  <input type="checkbox" name="couse" id="frontend" value="フロントエンド">
+                  <label class="couse-text" for="frontend">フロントエンド</label>
                 </div>
-                <div class="hopecouse-check">
-                  <input type="checkbox" name="backend">
-                  <label for="backend"></label>
+                <div class="hopecouse">
+                  <input type="checkbox" name="couse" id="backend" value="バックエンド">
+                  <label class="couse-text" for="backend">バックエンド</label>
                 </div>
-                <div class="hopecouse-check">
-
+                <div class="hopecouse">
+                  <input type="checkbox" name="couse" id="app" value="アプリ">
+                  <label class="couse-text" for="app">アプリ</label>
                 </div>
               </div>
             </div>
-            <div class="remarks-box">
-              <p>備考</p>
-              <textarea name="remarks" placeholder="何かあればご記入ください"></textarea>
+            <div class="remarks-box row">
+              <p class="textlabel">備考</p>
+              <textarea class="input-area" name="remarks" placeholder="何かあればご記入ください"></textarea>
             </div>
-            <div class="accout-making">
-              <input type="submit" value="アカウント作成">
+            <div class="account-making">
+              <input class="button full-width" type="submit" value="アカウント作成">
             </div>
-            <p>アカウントを作成することにより、<a href="">利用規約</a>と<a href="">プライバシーポリシー</a>に同意するものとします。</p>
+            <p class="sub-guidetext">アカウントを作成することにより、<a href="">利用規約</a>と<a href="">プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
-        <div class="footer-contents">
+        <div class="footer-contents sub-guidetext">
           <p>すでにアカウントをお持ちですか？ <a href="">ログイン</a></p>
           <a href="">認証メールが届きませんか？</a>
         </div>
